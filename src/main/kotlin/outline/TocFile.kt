@@ -1,4 +1,4 @@
-package com.github.mky2
+package com.github.mky2.outline
 
 interface TocVisitor {
     fun visitLine(text: String)
@@ -14,7 +14,6 @@ class BaseTocVisitor : TocVisitor {
     override fun visitLine(text: String) {
         val content = text.trim()
 
-        // process command
         if (processCommands(content)) return
 
         ENTRY_REGEX.matchEntire(content)?.run {

@@ -1,4 +1,4 @@
-package com.github.mky2
+package com.github.mky2.outline
 
 typealias Page = Int
 
