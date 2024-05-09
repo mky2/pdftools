@@ -58,7 +58,7 @@ class BaseTocVisitor : TocVisitor {
 }
 
 class IndentProcessor {
-    private var indentation = mutableListOf(0)
+    private val indentation = mutableListOf(0)
     private var depth = 0
 
     fun computeDepth(text: String): Int {
